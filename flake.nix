@@ -19,12 +19,18 @@
         flakeModules = {
           base = ./modules/base.nix;
           rust = ./modules/rust.nix;
+          react = ./modules/react.nix;
         };
 
         templates = {
           rust = {
             path = ./templates/rust ;
-            description = "Rust development environment ";
+            description = "Rust development environment";
+          };
+
+          react = {
+            path = ./templates/react ;
+            description = "React+Vite development environment";
           };
         };
       };
