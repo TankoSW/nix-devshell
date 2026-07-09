@@ -6,6 +6,10 @@
       packages = with pkgs; [
         git
         just
+        pgcli
+        jujutsu
+        curl
+        wget
       ];
     };
   };
