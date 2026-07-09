@@ -18,13 +18,13 @@
       flake = {
         flakeModules = {
           base = ./modules/base.nix;
-          go = ./modules/go.nix;
+          rust = ./modules/rust.nix;
         };
 
         templates = {
-          go = {
-            path = ./templates/go;
-            description = "Go development environment using Tanko";
+          rust = {
+            path = ./templates/rust ;
+            description = "Rust development environment ";
           };
         };
       };
